@@ -19,10 +19,10 @@ This project aims to revolutionize indoor navigation at railway stations using *
 ### 1️⃣ Mapping the Railway Station (Admin Mode)
 ```mermaid
 graph TD;
-    A[Start ARCore Session] --> B[Walk Through the Station & Detect Surfaces];
-    B --> C[Drop AR Anchors at Key Locations (Platforms, Exits, Ticket Counters)];
-    C --> D[Log Paths & Generate Navigation Graph];
-    D --> E[Save Map Data in Firebase for Future Use];
+    A["Start ARCore Session"] --> B["Walk Through the Station & Detect Surfaces"];
+    B --> C["Drop AR Anchors at Key Locations - Platforms, Exits, Ticket Counters"];
+    C --> D["Log Paths & Generate Navigation Graph"];
+    D --> E["Save Map Data in Firebase for Future Use"];
 ```
 ### 2️⃣ User Navigation Mode
 ```mermaid
