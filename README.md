@@ -1,9 +1,9 @@
 # SIH-1710-Enhancing-Navigation-for-Railway-Station-Facilities-and-Locations
 
-Overview
+##Overview
 This project aims to revolutionize indoor navigation at railway stations using Augmented Reality (AR) and real-time pathfinding. By leveraging ARCore, users can navigate large, unfamiliar station premises with AR overlays guiding them to their destination.
 
-Key Features
+##Key Features
 ✅ AR-Based Indoor Mapping – Uses Google ARCore to scan and tag key locations.
 ✅ Real-Time Navigation – Overlays AR directional arrows for intuitive guidance.
 ✅ Dynamic Indoor Mapping – Captures railway station layouts dynamically (no preloaded blueprints required).
@@ -13,11 +13,11 @@ Key Features
 
 
 
-Technology Stack
+##Technology Stack
 ![image](https://github.com/user-attachments/assets/e903c8f3-414d-4562-aef6-840d86646c42)
 
-Project Workflow
-1. Mapping the Railway Station (Admin Mode)
+##Project Workflow
+###1. Mapping the Railway Station (Admin Mode)
 [Start ARCore Session]  
        │  
        ▼  
@@ -32,7 +32,7 @@ Project Workflow
        ▼  
 [Save Map Data in Firebase for Future Use]
 
-2. User Navigation Mode
+###2. User Navigation Mode
 [User Opens App]  
        │  
        ▼  
