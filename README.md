@@ -12,7 +12,8 @@ This project aims to revolutionize indoor navigation at railway stations using *
 ✅ **User-Friendly UI/UX** – Designed using Figma for an intuitive experience.  
 
 ## Technology Stack
-![Technology Stack](https://github.com/user-attachments/assets/e903c8f3-414d-4562-aef6-840d86646c42)
+![image](https://github.com/user-attachments/assets/54e47803-0dbe-4d8e-94bd-e44c3a1230d0)
+
 
 ## Project Workflow
 
