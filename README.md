@@ -14,7 +14,6 @@ This project aims to revolutionize indoor navigation at railway stations using *
 ## Technology Stack
 ![image](https://github.com/user-attachments/assets/54e47803-0dbe-4d8e-94bd-e44c3a1230d0)
 
-
 ## Project Workflow
 
 ### 1️⃣ Mapping the Railway Station (Admin Mode)
