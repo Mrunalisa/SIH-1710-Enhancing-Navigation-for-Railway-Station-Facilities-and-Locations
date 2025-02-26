@@ -23,8 +23,9 @@ graph TD;
     B --> C[Drop AR Anchors at Key Locations (Platforms, Exits, Ticket Counters)];
     C --> D[Log Paths & Generate Navigation Graph];
     D --> E[Save Map Data in Firebase for Future Use];
-
+```
 ### 2️⃣ User Navigation Mode
+```mermaid
 graph TD;
     A[User Opens App] --> B[Load Indoor Map from Firebase];
     B --> C[User Selects Destination];
@@ -32,5 +33,5 @@ graph TD;
     D --> E[Overlay AR Navigation Guides on Camera];
     E --> F[User Follows AR Directions];
     F --> G[Recalculate Path If User Deviates];
-
+```
 
