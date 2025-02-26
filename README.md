@@ -14,4 +14,42 @@ Key Features
 
 
 Technology Stack
+![image](https://github.com/user-attachments/assets/e903c8f3-414d-4562-aef6-840d86646c42)
+
+Project Workflow
+1. Mapping the Railway Station (Admin Mode)
+[Start ARCore Session]  
+       │  
+       ▼  
+[Walk Through the Station & Detect Surfaces]  
+       │  
+       ▼  
+[Drop AR Anchors at Key Locations (Platforms, Exits, Ticket Counters)]  
+       │  
+       ▼  
+[Log Paths & Generate Navigation Graph]  
+       │  
+       ▼  
+[Save Map Data in Firebase for Future Use]
+
+2. User Navigation Mode
+[User Opens App]  
+       │  
+       ▼  
+[Load Indoor Map from Firebase]  
+       │  
+       ▼  
+[User Selects Destination]  
+       │  
+       ▼  
+[Compute Best Route Using A* Algorithm]  
+       │  
+       ▼  
+[Overlay AR Navigation Guides on Camera]  
+       │  
+       ▼  
+[User Follows AR Directions]  
+       │  
+       ▼  
+[Recalculate Path If User Deviates]  
 
