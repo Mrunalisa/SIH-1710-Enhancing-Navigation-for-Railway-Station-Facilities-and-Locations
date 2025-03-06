@@ -1,0 +1,13 @@
+Abstract
+TY-DS
+Semester Project 3
+Title: Enhancing Navigation for Railway Station Facilities and Locations.
+The objective of this project is to develop a comprehensive navigation solution for railway stations, aimed at enhancing passenger experience and ensuring efficient navigation within the station premises. The project involves designing a multi-platform system that includes a mobile application with 3D interactive maps. The system will provide real-time directions to various facilities such as ticket counters, platforms, restrooms, food courts, and waiting areas. The solution will integrate with existing railway apps and services to offer a seamless user experience, thereby reducing confusion, saving time, and improving accessibility within the station. Regular updates will be implemented to reflect changes in station layout and facility locations. This project will provide valuable insights into user-friendly navigation systems and their application in complex environments like railway stations.
+
+Key skills and tools:
+Node.js/MongoDB/Firebase, Figma , Android.
+
+Team Member’s:
+NamePRNRoll no1.Harshal Vishnubhagwan Gaikwad221106020TYDS212.Nomesh Ravindra Kirange 221106022TYDS233.Tejas Rajendra Jadhav 221106037TYDS374.Mrunali Ravindra Badgujar231206001TYDS62
+
+
