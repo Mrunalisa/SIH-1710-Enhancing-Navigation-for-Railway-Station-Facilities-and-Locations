@@ -35,3 +35,108 @@ graph TD;
     F --> G[Recalculate Path If User Deviates];
 ```
 
+# 🗓️ Weekly Logbook – SIH-1710  
+**Project Title:** Enhancing Navigation for Railway Station Facilities and Locations  
+**Smart India Hackathon ID:** SIH-1710  
+
+This document captures the weekly progress log for the development of an AR-based indoor navigation system for railway stations.
+
+---
+
+## ✅ Week 1 – Problem Statement & Objective
+
+**Activities:**
+- Defined the core problem of navigation difficulty in large stations.
+- Identified primary users: elderly, differently-abled, and tourists.
+- Finalized solution goals using ARCore and pathfinding.
+
+**Outcomes:**
+- Abstract and objectives drafted.
+- Documented problem scope.
+- Team brainstorming completed.
+
+---
+
+## ✅ Week 2 – Project Planning & Execution
+
+**Activities:**
+- Created a project timeline with key milestones.
+- Task distribution:
+  - AR Integration – Tejas Jadhav
+  - UI/UX Design – Mrunali Badgujar , Tejas Jadhav , Harshal Gaikwad
+  - Android Frontend - Tejas Jadhav , Mrunali Badgujar
+  - Firebase Setup and Work – Mrunali Badgujar
+  - Pathfinding Algorithm – Harshal Gaikwad , Nomesh Kirange
+  - Documentation / Report - Nomesh Kirange
+  - Github Repo maintain and update (Github repo work)- Mrunali Badgujar 
+- Set up GitHub repo.
+
+**Outcomes:**
+- Development strategy finalized.
+- Figma wireframes initiated.
+
+---
+
+## ✅ Week 3 – Technical Content & Implementation
+
+**Activities:**
+- Integrated ARCore SDK into Android Studio.
+- Began admin mode for scanning and tagging.
+- Set up Firebase Firestore structure.
+- Planned and analyzed the A* pathfinding algorithm.
+
+**Outcomes:**
+- AR anchors placed successfully.
+- Firebase backend live with basic structure.
+
+---
+
+## ✅ Week 4 – Results & Testing
+
+**Activities:**
+- Tested AR anchors in different indoor setups.
+- Verified pathfinding between points A and B.
+- Checked AR arrow stability and responsiveness.
+
+**Outcomes:**
+- AR navigation successfully demonstrated.
+- Improvement areas identified for future iterations.
+
+---
+
+## ✅ Week 5 – Presentation & Documentation
+
+**Activities:**
+- Created architecture diagrams (data flow, overlay logic).
+- Prepared presentation covering:
+  - Problem & Solution
+  - Tech Stack
+  - User Journey
+  - Results
+- Recorded demo videos.
+
+**Outcomes:**
+- Draft report completed.
+- Received and incorporated mentor feedback.
+
+---
+
+## ✅ Week 6 – Team Collaboration
+
+**Activities:**
+- Held regular meetings for progress tracking.
+- Synced code via GitHub.
+- Collaborated on debugging AR and Firebase modules.
+
+**Outcomes:**
+- Smooth teamwork and communication.
+- Peer-reviewed UI and core logic.
+
+---
+
+## 🧑‍💻 Team Note
+
+We maintained consistent coordination, shared responsibilities, and collaborated effectively throughout the project timeline to ensure on-time delivery and quality outcomes.
+
+---
+
