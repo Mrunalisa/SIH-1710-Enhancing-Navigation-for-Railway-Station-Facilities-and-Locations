@@ -134,6 +134,23 @@ This document captures the weekly progress log for the development of an AR-base
 
 ---
 
+## ✅ Week 7 – Scalability & Practical Application
+
+**Activities:**
+- Explored broader use cases: airports, shopping malls, hospitals.
+- Proposed enhancements:
+  - Voice instructions
+  - Multi-language support
+
+- Discussed monetization ideas:
+  - Government Railway App integration
+
+**Outcomes:**
+- Documented future scope in project report.
+- Added project roadmap to presentation.
+
+---
+
 ## 🧑‍💻 Team Note
 
 We maintained consistent coordination, shared responsibilities, and collaborated effectively throughout the project timeline to ensure on-time delivery and quality outcomes.
