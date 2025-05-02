@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Manzil03</string>
+    
+    <!-- Main Activity -->
+    <string name="user_mode">User Mode</string>
+    <string name="admin_mode">Admin Mode</string>
+    <string name="admin_authentication">Admin Authentication</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+    <string name="invalid_password">Invalid admin password</string>
+    <string name="security_error">Error initializing security</string>
+
+    <!-- Navigation Activity -->
+    <string name="enter_destination">Enter destination room number</string>
+    <string name="path_render_distance">Path render distance</string>
+    <string name="scan_delay">Scan delay</string>
+    <string name="camera_permission_required">Camera permissions required for navigation</string>
+    <string name="error_camera">Error starting camera: %1$s</string>
+    <string name="error_text_detection">Error detecting text: %1$s</string>
+
+    <!-- Admin Activity -->
+    <string name="add_node">Add Navigation Node</string>
+    <string name="edit_node">Edit Node</string>
+    <string name="connect_to_node">Connect to Node</string>
+    <string name="node_options">Node Options</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="connect">Connect</string>
+    <string name="select_node_first">Select a node first</string>
+    <string name="label">Label</string>
+    <string name="is_classroom">Is Classroom</string>
+    <string name="classroom_number">Classroom Number</string>
+    <string name="save">Save</string>
+</resources>

@@ -1,0 +1,145 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "4f820f0bd962a3727a71a9222533a4ea",
+    "entities": [
+      {
+        "tableName": "navigation_nodes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `x` REAL NOT NULL, `y` REAL NOT NULL, `z` REAL NOT NULL, `label` TEXT, `isClassroom` INTEGER NOT NULL, `classroomNumber` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "x",
+            "columnName": "x",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "y",
+            "columnName": "y",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "z",
+            "columnName": "z",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "label",
+            "columnName": "label",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isClassroom",
+            "columnName": "isClassroom",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "classroomNumber",
+            "columnName": "classroomNumber",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "navigation_edges",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`sourceNodeId` INTEGER NOT NULL, `targetNodeId` INTEGER NOT NULL, `weight` REAL NOT NULL, PRIMARY KEY(`sourceNodeId`, `targetNodeId`), FOREIGN KEY(`sourceNodeId`) REFERENCES `navigation_nodes`(`id`) ON UPDATE NO ACTION ON DELETE NO ACTION , FOREIGN KEY(`targetNodeId`) REFERENCES `navigation_nodes`(`id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "sourceNodeId",
+            "columnName": "sourceNodeId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "targetNodeId",
+            "columnName": "targetNodeId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weight",
+            "columnName": "weight",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "sourceNodeId",
+            "targetNodeId"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_navigation_edges_sourceNodeId",
+            "unique": false,
+            "columnNames": [
+              "sourceNodeId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_navigation_edges_sourceNodeId` ON `${TABLE_NAME}` (`sourceNodeId`)"
+          },
+          {
+            "name": "index_navigation_edges_targetNodeId",
+            "unique": false,
+            "columnNames": [
+              "targetNodeId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_navigation_edges_targetNodeId` ON `${TABLE_NAME}` (`targetNodeId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "navigation_nodes",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "sourceNodeId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "navigation_nodes",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "targetNodeId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4f820f0bd962a3727a71a9222533a4ea')"
+    ]
+  }
+}

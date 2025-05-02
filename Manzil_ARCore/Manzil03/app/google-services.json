@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "589629328446",
+    "project_id": "manzil03-6d630",
+    "storage_bucket": "manzil03-6d630.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589629328446:android:189b44c3c92a1a635d956f",
+        "android_client_info": {
+          "package_name": "com.example.manzil03"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9TWyX7-4z-5LIY8amB4OYx3-_WmC8baI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
