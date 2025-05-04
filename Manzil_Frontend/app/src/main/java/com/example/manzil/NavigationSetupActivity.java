@@ -26,7 +26,7 @@ public class NavigationSetupActivity extends AppCompatActivity {
 
         scanButton.setOnClickListener(view -> {
             // Navigate to AR landmark scanning
-            startActivity(new Intent(this, ARScanActivity.class));
+            startActivity(new Intent(this, NavigationActivity.class));
         });
 
         goButton.setOnClickListener(view -> {

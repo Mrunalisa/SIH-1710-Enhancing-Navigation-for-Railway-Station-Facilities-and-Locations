@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Enter Station Name"
                 android:textColor="#FFFFFF"
-                android:hintTextColor="#AAAAAA"
+                android:textColorHint="#AAAAAA"
                 android:backgroundTint="#FFFFFF" />
         </LinearLayout>
 
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Enter Destination"
                 android:textColor="#FFFFFF"
-                android:hintTextColor="#AAAAAA"
+                android:textColorHint="#AAAAAA"
                 android:backgroundTint="#FFFFFF" />
         </LinearLayout>
 

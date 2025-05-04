@@ -47,7 +47,7 @@ public class LocationPermissionActivity extends AppCompatActivity {
             if (location != null) {
                 Toast.makeText(this, "Location accessed: " + location.getLatitude(), Toast.LENGTH_SHORT).show();
                 // Proceed to next activity
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new Intent(this,NavigationActivity.class));
                 finish();
             } else {
                 Toast.makeText(this, "Unable to get location.", Toast.LENGTH_SHORT).show();

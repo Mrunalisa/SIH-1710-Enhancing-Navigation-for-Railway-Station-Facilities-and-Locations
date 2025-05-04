@@ -44,7 +44,7 @@
         android:maxLength="6"
         android:gravity="center"
         android:textColor="#FFFFFF"
-        android:hintTextColor="#888888"
+        android:textColorHint="#888888"
         android:textSize="18sp"
         android:backgroundTint="#fbb03b"
         android:layout_marginTop="24dp"

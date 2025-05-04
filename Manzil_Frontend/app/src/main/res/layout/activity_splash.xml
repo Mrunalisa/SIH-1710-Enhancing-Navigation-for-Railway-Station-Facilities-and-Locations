@@ -3,7 +3,36 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@android:color/black">
 
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="M  a  n  Z  i  l"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium" />
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Your indoor pathfinder"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif" />
+
 </RelativeLayout>

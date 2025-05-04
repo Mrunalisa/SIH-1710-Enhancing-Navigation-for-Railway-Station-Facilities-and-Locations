@@ -14,7 +14,7 @@
         android:layout_height="100dp"
         android:src="@drawable/logo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_margin="60dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -52,7 +52,7 @@
         android:hint="you@example.com"
         android:textColor="#FFFFFF"
         android:backgroundTint="#FFFFFF"
-        android:hintTextColor="#AAAAAA"
+        android:textColorHint="#AAAAAA"
         android:inputType="textEmailAddress"
         app:layout_constraintTop_toBottomOf="@id/emailLabel"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +79,7 @@
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
         android:backgroundTint="#FFFFFF"
-        android:hintTextColor="#AAAAAA"
+        android:textColorHint="#AAAAAA"
         app:layout_constraintTop_toBottomOf="@id/passwordLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

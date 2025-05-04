@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:hint="Full Name"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
+            android:textColorHint="#AAAAAA"
             android:backgroundTint="#fbb03b"
             android:inputType="textPersonName"
             android:layout_marginTop="12dp" />
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
+            android:textColorHint="#AAAAAA"
             android:backgroundTint="#fbb03b"
             android:inputType="textEmailAddress"
             android:layout_marginTop="12dp" />
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:hint="Phone Number"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
+            android:textColorHint="#AAAAAA"
             android:backgroundTint="#fbb03b"
             android:inputType="phone"
             android:layout_marginTop="12dp" />
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:hint="Date of Birth"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
+            android:textColorHint="#AAAAAA"
             android:backgroundTint="#fbb03b"
             android:inputType="date"
             android:layout_marginTop="12dp" />

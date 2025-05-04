@@ -49,11 +49,9 @@
         <activity
             android:name=".WelcomeActivity"
             android:exported="false" />
+
         <activity
             android:name=".SplashActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Manzil.NoActionBar">

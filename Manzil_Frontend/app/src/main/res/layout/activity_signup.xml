@@ -32,7 +32,6 @@
             android:hint="Enter full name"
             android:backgroundTint="#FFFFFF"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
             android:inputType="textPersonName" />
 
         <!-- Email -->
@@ -49,7 +48,6 @@
             android:hint="Enter email"
             android:backgroundTint="#FFFFFF"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
             android:inputType="textEmailAddress" />
 
         <!-- Phone Number -->
@@ -66,7 +64,6 @@
             android:hint="Enter phone number"
             android:backgroundTint="#FFFFFF"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
             android:inputType="phone" />
 
         <!-- Gender -->
@@ -97,7 +94,6 @@
             android:hint="DD/MM/YYYY"
             android:backgroundTint="#FFFFFF"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
             android:inputType="date" />
 
         <!-- Password -->
@@ -114,7 +110,6 @@
             android:hint="Enter password"
             android:backgroundTint="#FFFFFF"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
             android:inputType="textPassword" />
 
         <!-- Confirm Password -->
@@ -131,7 +126,6 @@
             android:hint="Re-enter password"
             android:backgroundTint="#FFFFFF"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
             android:inputType="textPassword" />
 
         <!-- Button -->
