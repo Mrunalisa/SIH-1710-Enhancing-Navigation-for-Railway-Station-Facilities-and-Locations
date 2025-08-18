@@ -64,7 +64,7 @@ This document captures the weekly progress log for the development of an AR-base
 - Task distribution:
   - AR Integration – Tejas Jadhav
   - UI/UX Design – Mrunali Badgujar , Tejas Jadhav , Harshal Gaikwad
-  - Android Frontend - Tejas Jadhav , Mrunali Badgujar
+  - Android Frontend - Mrunali Badgujar
   - Firebase Setup and Work – Mrunali Badgujar
   - Pathfinding Algorithm – Harshal Gaikwad , Nomesh Kirange
   - Documentation / Report - Nomesh Kirange
