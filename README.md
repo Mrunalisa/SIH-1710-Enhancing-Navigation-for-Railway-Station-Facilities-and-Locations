@@ -156,59 +156,211 @@ This document captures the weekly progress log for the development of an AR-base
 
 After finishing Stage 1 (frontend and basic ARCore floor detection with map adding), we moved to Stage 2. Here we did a research survey comparing indoor navigation methods, implemented manual ARCore navigation with checkpoints, manual step counting using gyroscope and speedometer for distance/direction, created research paper and PPT, and submitted to conference.
 
-### Week 1 – Firebase Auth Setup
 
-In Week 1 of Stage 2, we completed Firebase authentication fully. We enabled email/password sign-in in the Firebase console and added signup, login, and forgot password logic implementation in our Android app. Users now get an email link to reset passwords if they forget, making the app secure and user-friendly.
 
-We tested auth flows end-to-end: new users register with email and password, store user data in Firebase, and login smoothly. We handled errors like weak passwords or invalid emails. By week's end, all users must log in to access station selection and AR navigation.
+## 🚀 Implementation Progress – I
 
-### Week 2 – Manual ARCore Arrows with Checkpoints
+### **Week 1: Review of Phase-I & GPS Analysis**
 
-Week 2 focused on manual ARCore navigation implementation. We created a manual map, added checkpoints from source to destination, and rendered stable AR arrows based on straight paths and number of turns between checkpoints.
+**Work Done:**
 
-We fixed arrow flickering using ARCore pose tracking and smoothing. Arrows show direction at specific distances with manual turn counts. We tested in indoor spaces simulating station halls.
+* Reviewed Phase-I work including UI design, ARCore integration, and floor plane detection.
+* Tested GPS performance inside indoor environments such as railway stations.
+* Observed high GPS instability, signal loss, and large positional errors.
+* Refined ARCore floor detection and anchor stability.
 
-Developer mode was polished – we scanned, placed, and saved multiple anchors with POI (Point of Interest) details manually. By end of week, end-to-end worked: select points → manual checkpoints → follow AR arrows.
+**Outcome:**
 
-### Week 3 – Research Survey on Indoor Navigation Methods
+* GPS identified as unsuitable for indoor navigation.
+* ARCore foundation confirmed stable for further development.
 
-In Week 3, we conducted literature survey comparing indoor positioning: WiFi (4-8m accuracy but needs infrastructure), BLE (3-5m but beacon deployment), vs IMU sensors (accelerometer/gyroscope step counting 93-97% accuracy, no extra hardware).
+---
 
-We studied 20+ papers on ARCore navigation, manual step detection via peak analysis on accelerometer magnitude, and gyroscope for heading/turns. IMU methods showed best for real time without setup costs.
+### **Week 2: Literature Survey & Sensor-Based Navigation**
 
-This survey justified our choice: ARCore + manual IMU step counting over radio-based methods. We documented comparisons with accuracy tables for paper.
+**Work Done:**
 
-### Week 4 – Manual Step Counting Implementation
+* Conducted literature survey on indoor navigation technologies.
+* Studied Pedestrian Dead Reckoning (PDR) techniques.
+* Analyzed accelerometer, gyroscope, and speedometer usage.
+* Finalized transition from GPS to sensor-based navigation.
 
-Week 4 implemented manual step counting using phone sensors. We used accelerometer for step detection (peak detection on magnitude data) and gyroscope for direction/turns, estimating distance with stride length.
+**Outcome:**
 
-Speedometer data helped refine distance per step. Manual checkpoints reset drift – count steps from source to next checkpoint, show AR arrows for straight/turn paths.
+* Sensor-based movement tracking selected as core navigation approach.
 
-Tests showed 95%+ step accuracy across phone positions. Integrated with ARCore: steps update position along manual map path.
+---
 
-### Week 5 – Full Sensor Integration & Testing
+### **Week 3: Firebase Authentication & User Management**
 
-Week 5 fused gyroscope (turns/heading) + speedometer (distance) with ARCore. Manual path: source → checkpoints → destination with predefined step counts and turn directions.
+**Work Done:**
 
-AR arrows trigger at checkpoint distances: "straight 50 steps" or "turn left after 20 steps". Tested full flow in 100m indoor path – minimal drift with manual resets.
+* Integrated Firebase Authentication.
+* Implemented user registration, login, and password reset.
+* Added input validation and error handling.
+* Tested authentication flow thoroughly.
 
-Validated against survey: our IMU+ARCore (2-3m error) beat WiFi/BLE infrastructure needs. Ready for research documentation.
+**Outcome:**
 
-### Week 6 – App Integration & Demo Preparation
+* Secure user authentication successfully implemented.
 
-Week 6 joined everything: login → station select → manual map with checkpoints → start AR navigation showing step count, distance remaining, turn alerts via arrows.
+---
 
-Fixed checkpoint arrow snapping and added "recalibrate at checkpoint" using ARCore anchors. Recorded full demo video: user follows manual steps/turns to destination.
+## 🛠️ Implementation Progress – II
 
-App stable across devices. Prepared data/logs for paper: step accuracy graphs, path error vs survey methods.
+### **Week 4: Manual Indoor Mapping & AR Navigation**
 
-### Week 7 – Research Paper, PPT & Conference Submission
+**Work Done:**
 
-Week 7 wrote research paper "ARCore+IMU Step Counting for Railway Station Navigation". Included survey (WiFi/BLE/IMU comparisons), our manual method (checkpoints, sensor fusion), results (95% step accuracy, real-time turns), future scope.
+* Designed manual indoor routes with predefined checkpoints.
+* Implemented ARCore anchors for each checkpoint.
+* Developed AR directional arrows for navigation.
+* Fixed arrow flickering and alignment issues.
 
-Created PPT with architecture, demos, comparison tables. Submitted to student conference, now waiting for acceptance response and presentation slot.
+**Outcome:**
 
-**Stage 2 complete** – working app, validated research, ready for conference.
+* Functional AR-based indoor navigation achieved.
+
+---
+
+### **Week 5: Comparative Study of Indoor Navigation Technologies**
+
+**Work Done:**
+
+* Studied Wi-Fi fingerprinting, BLE beacons, and IMU-based methods.
+* Compared accuracy, cost, scalability, and infrastructure needs.
+* Prepared comparative analysis tables.
+
+**Outcome:**
+
+* ARCore + IMU approach justified academically and technically.
+
+---
+
+### **Week 6: Step Counting & Direction Estimation**
+
+**Work Done:**
+
+* Implemented step detection using accelerometer.
+* Used gyroscope for heading estimation.
+* Converted steps to distance using stride length models.
+* Integrated sensors with AR checkpoints.
+* Tested across multiple phone placements.
+
+**Outcome:**
+
+* Reliable sensor-based positioning implemented.
+
+---
+
+## 🔗 Implementation Progress – III
+
+### **Week 7: Sensor Fusion & Dynamic AR Navigation**
+
+**Work Done:**
+
+* Combined accelerometer, gyroscope, and speedometer data.
+* Implemented sensor fusion to reduce noise and drift.
+* Updated AR arrows dynamically in real time.
+* Tested navigation on long indoor paths.
+
+**Outcome:**
+
+* Accurate and stable sensor fusion-based navigation achieved.
+
+---
+
+### **Week 8: Full App Integration & UI Enhancement**
+
+**Work Done:**
+
+* Integrated authentication, navigation, sensors, and AR modules.
+* Enhanced UI with real-time navigation feedback.
+* Fixed UI delays and transition issues.
+* Performed multi-device testing.
+* Recorded demo video.
+
+**Outcome:**
+
+* Fully integrated, stable, and user-friendly application.
+
+---
+
+### **Week 9: Performance Evaluation & Comparison**
+
+**Work Done:**
+
+* Measured step accuracy, positional error, and responsiveness.
+* Compared results with Wi-Fi and BLE-based systems.
+* Achieved positional error of **2–3 meters**.
+* Documented observations and results.
+
+**Outcome:**
+
+* System effectiveness validated experimentally.
+
+---
+
+## 🧪 Testing, Results & Discussion
+
+### **Week 10: Functional Testing & Optimization**
+
+**Work Done:**
+
+* Conducted module-wise and system-level testing.
+* Fixed UI, sensor synchronization, and AR rendering bugs.
+* Fine-tuned system parameters.
+
+**Outcome:**
+
+* Stable and optimized system.
+
+---
+
+### **Week 11: Result Analysis & Discussion**
+
+**Work Done:**
+
+* Analyzed accuracy, response time, and sensor drift.
+* Compared results with existing indoor navigation techniques.
+* Prepared result graphs and performance tables.
+
+**Outcome:**
+
+* Strong performance validation achieved.
+
+---
+
+### **Week 12: Final Testing Review**
+
+**Work Done:**
+
+* Verified all test results.
+* Finalized testing documentation.
+* Prepared evaluation summary.
+
+**Outcome:**
+
+* System ready for final submission.
+
+---
+
+## 📄 Report Writing, Conclusion & Submission
+
+### **Week 13: Documentation & Academic Submission**
+
+**Work Done:**
+
+* Prepared full project report as per university format.
+* Documented literature survey, methodology, implementation, and results.
+* Added future scope including multi-floor navigation and auto-mapping.
+* Prepared professional PowerPoint presentation.
+* Submitted research paper to a student research conference.
+
+**Outcome:**
+
+* Project Stage-II successfully completed with complete documentation and academic submission.
+
 
 ## 🧑‍💻 Team Note
 
