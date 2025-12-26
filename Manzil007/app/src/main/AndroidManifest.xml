@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00030000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".FirebaseMainActivity"
+            android:exported="false" />
+
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Destination"
+            android:exported="false"
+            android:label="@string/title_activity_destination" />
+        <activity
+            android:name=".SourceIdentification"
+            android:exported="false"
+            android:label="@string/title_activity_source_identification" />
+        <activity
+            android:name=".NavigateBasic"
+            android:exported="false"
+            android:label="@string/title_activity_navigate_basic" />
+        <activity
+            android:name=".SourceDetection"
+            android:exported="false"
+            android:label="@string/title_activity_source" />
+        <activity
+            android:name=".ARNavigation"
+            android:exported="false"
+            android:label="@string/title_activity_source" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:label="LoginActivity" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false"
+            android:label="SignupActivity" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false"
+            android:label="WelcomeActivity" />
+
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.developer.manzil.ar.codelab.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+
+        <activity
+            android:name=".SuccessActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

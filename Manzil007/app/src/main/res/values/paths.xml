@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="LocationG1">
+        <item>15</item>
+        <item>30</item>
+        <item>15</item>
+        <item>30</item>
+    </integer-array>
+    <integer-array name="LocationG2">
+        <item>15</item>
+        <item>30</item>
+        <item>15</item>
+        <item>30</item>
+    </integer-array>
+    <string-array name="CrossPassage">
+        <item>401:416</item>
+        <item>402:415</item>
+        <item>403:414</item>
+        <item>404:413</item>
+        <item>405:412</item>
+        <item>406:411</item>
+        <item>407:410</item>
+        <item>408:409</item>
+    </string-array>
+</resources>

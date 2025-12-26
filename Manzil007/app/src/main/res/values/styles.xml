@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/lightYellow</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:colorBackground">@color/black</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Custom text styles for better visibility -->
+    <style name="TextStyleWhite" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextStyleYellow" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ButtonStyleYellow" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/yellow</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Spinner style for dark background -->
+    <style name="SpinnerStyleDark" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@android:drawable/btn_dropdown</item>
+        <item name="android:popupBackground">#FFFFFF</item>
+        <item name="android:dropDownSelector">@android:color/darker_gray</item>
+    </style>
+
+</resources>

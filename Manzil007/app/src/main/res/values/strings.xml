@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Manzil</string>
+    <!--    <string name="navigation_drawer_open">Open navigation drawer</string>-->
+    <!--    <string name="navigation_drawer_close">Close navigation drawer</string>-->
+    <!--    <string name="nav_header_title">Android Studio</string>-->
+    <!--    <string name="nav_header_subtitle">android.studio@android.com</string>-->
+    <!--    <string name="nav_header_desc">Navigation header</string>-->
+    <!--    <string name="action_settings">Settings</string>-->
+
+    <!--    <string name="menu_home">Home</string>-->
+    <!--    <string name="menu_gallery">Gallery</string>-->
+    <!--    <string name="menu_slideshow">Slideshow</string>-->
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="stations_array">
+        <item>Select Station</item>
+        <item>Station A</item>
+        <item>Station B</item>
+        <item>Station C</item>
+        <item>Station D</item>
+    </string-array>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_header_desc">Welcome to the app</string>
+    <string name="nav_header_title">Manzil</string>
+    <string name="nav_header_subtitle">Navigation Assistant</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+
+    <!-- Navigation Drawer Strings -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="title_prev">Prev</string>
+    <string name="title_userguide">Steps</string>
+    <string name="title_next">Next</string>
+    <string name="title_activity_destination">Destination</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_source_identification">SourceIdentification</string>
+    <string name="title_activity_navigate_basic">NavigateBasic</string>
+    <string name="title_activity_source">Source</string>
+    <string name="title_activity_firebase">Firebase</string>
+
+</resources>

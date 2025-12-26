@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="boards">
+        <item name="Room 401">Room 401:Hostel Room 401</item>
+        <item name="Room 402">Room 402:Hostel Room 402</item>
+        <item name="Room 403">Room 403:Hostel Room 403</item>
+        <item name="Room 404">Room 404:Hostel Room 404</item>
+        <item name="Room 405">Room 405:Hostel Room 405</item>
+        <item name="Room 406">Room 406:Hostel Room 406</item>
+        <item name="Room 407">Room 407:Hostel Room 407</item>
+        <item name="Room 408">Room 408:Hostel Room 408</item>
+        <item name="Room 409">Room 409:Hostel Room 409</item>
+        <item name="Room 410">Room 410:Hostel Room 410</item>
+        <item name="Room 411">Room 411:Hostel Room 411</item>
+        <item name="Room 412">Room 412:Hostel Room 412</item>
+        <item name="Room 413">Room 413:Hostel Room 413</item>
+        <item name="Room 414">Room 414:Hostel Room 414</item>
+        <item name="Room 415">Room 415:Hostel Room 415</item>
+        <item name="Room 416">Room 416:Hostel Room 416</item>
+        <item name="Toilet (East)">Toilet (East):Restroom - Near Room 404</item>
+        <item name="Toilet (North)">Toilet (North):Restroom - Near Room 408</item>
+        <item name="Toilet (South)">Toilet (South):Restroom - Near Room 412</item>
+        <item name="Entrance">Entrance:Main Entrance between 401 and 416</item>
+    </string-array>
+    <string-array name="destinations">
+        <item>Room 401</item>
+        <item>Room 402</item>
+        <item>Room 403</item>
+        <item>Room 404</item>
+        <item>Room 405</item>
+        <item>Room 406</item>
+        <item>Room 407</item>
+        <item>Room 408</item>
+        <item>Room 409</item>
+        <item>Room 410</item>
+        <item>Room 411</item>
+        <item>Room 412</item>
+        <item>Room 413</item>
+        <item>Room 414</item>
+        <item>Room 415</item>
+        <item>Room 416</item>
+        <item>Toilet (East)</item>
+        <item>Toilet (North)</item>
+        <item>Toilet (South)</item>
+        <item>Entrance</item>
+    </string-array>
+</resources>

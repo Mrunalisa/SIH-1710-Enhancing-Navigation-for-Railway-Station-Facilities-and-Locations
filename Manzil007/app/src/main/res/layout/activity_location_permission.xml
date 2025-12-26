@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/locationIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/location"
+        android:contentDescription="Location Icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/locationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Location"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/locationIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/locationDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="To provide accurate navigation, we need access to your location."
+        android:textColor="#CCCCCC"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/locationTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/allowLocationBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Allow Location Access"
+        android:backgroundTint="#fbb03b"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/locationDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
